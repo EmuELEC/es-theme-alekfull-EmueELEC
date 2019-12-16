@@ -1,0 +1,207 @@
+<!--
+ALEKFULL NX // theme by fagnerpc
+facebook.com/alekfull.arcade
+
+Inspired by Switch interface
+Logos by Lilbud and fagnerpc
+
+Tema editado por José Adriano (drixplm) para atender necessidas em Emuelec, adicionado sistemas, openbor,capcom,cps1,cps2,cps3,vic20,videopac,setup,sc-3000,megadrive-japan,c16,c18,pspminis,auto-games,lastplayed,collections,snes hack,
+gameboy hack, nintendo hack, genesis hack, entre outros, meunu personalizado, som na troca de sistemas. obrigado as criadores originais do tema.
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>4</formatVersion>
+   <include>./_inc/icons/menuicons.xml</include>
+	<include>./_inc/menu/menu.xml</include>
+
+   <view name="system, basic, detailed, grid, video">
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+      </image> 
+
+      <helpsystem name="help">
+         <fontPath>./_inc/fonts/Oxygen-Regular.ttf</fontPath>
+         <fontSize>0.0215</fontSize>     
+         <pos>0.18 0.942</pos>      
+         <textColor>636363</textColor>
+         <iconColor>ffffff</iconColor>
+      </helpsystem> 	  
+   </view>
+
+   <feature supported="carousel">
+      <view name="system">
+         <carousel name="systemcarousel">
+            <type>horizontal</type>
+            <pos>-0.660 -0.10</pos>
+            <size>1.76 1</size>
+            <logoScale>1.12</logoScale>
+            <logoSize>0.28 0.28</logoSize>
+            <color>00000000</color>
+            <logoRotation>-6.5</logoRotation>
+            <logoRotationOrigin>5.5 0.5</logoRotationOrigin>
+            <logoAlignment>bottom</logoAlignment>
+            <maxLogoCount>10</maxLogoCount>
+			<scrollSound>./_inc/teste.mp3</scrollSound>
+         </carousel>
+         
+         <text name="systemInfo">
+            <pos>-0.30 0.924</pos>
+            <backgroundColor>00000000</backgroundColor>
+            <color>cbcbcb</color>
+            <fontPath>./_inc/fonts/Oxygen-Regular.ttf</fontPath>
+            <fontSize>0.0215</fontSize>
+         </text> 
+      
+         <image name="mainOverlay" extra="true">
+            <path>./_inc/assets/overlay.png</path>
+            <size>1 1</size>
+            <pos>0 0</pos>
+            <origin>0 0</origin>
+         </image>
+
+         <helpsystem name="help">
+            <pos>0.30 0.942</pos>      
+            <textColor>ffffff</textColor>         
+      </helpsystem>
+      </view>
+   </feature>
+
+   <view name="detailed, video, basic">
+      <image name="logo">
+		   <pos>0.14 0.925</pos>
+		   <maxSize>0.10 0.10</maxSize>
+      </image>
+   
+	  <textlist name="gamelist">
+         <pos>0.084 0.12</pos>
+         <size>0.345 0.75</size>
+         <selectorColor>403c3e</selectorColor>
+         <selectedColor>ffffff</selectedColor>
+         <primaryColor>ffffff</primaryColor>
+         <secondaryColor>ffffff</secondaryColor>
+         <fontPath>./_inc/fonts/Oxygen-Regular.ttf</fontPath>
+         <fontSize>0.023</fontSize>
+         <alignment>left</alignment>
+		   <lineSpacing>2.075</lineSpacing>
+      </textlist>
+	  	      	  
+      <datetime name="md_releasedate">
+         <pos>0.855 0.668</pos>
+		   <color>726f70</color>
+		   <fontSize>0.023</fontSize>
+		   <fontPath>./_inc/fonts/Oxygen-Regular.ttf</fontPath>
+      </datetime>
+	  
+      <text name="md_genre">
+         <pos>0.51 0.632</pos>
+         <size>0.220 0.034</size>
+		   <fontSize>0.023</fontSize>
+		   <color>726f70</color>
+		   <fontPath>./_inc/fonts/Oxygen-Regular.ttf</fontPath>
+		   <alignment>center</alignment>
+      </text>         
+
+      <text name="md_developer">
+         <size>0.200 0.037</size>
+         <pos>0.53 0.676</pos>
+         <fontPath>./_inc/fonts/Oxygen-Regular.ttf</fontPath>
+         <fontSize>0.023</fontSize>
+         <color>726f70</color>
+         <alignment>center</alignment>
+      </text>
+	  
+      <text name="md_description">
+         <color>726f70</color>
+         <fontPath>./_inc/fonts/Oxygen-Regular.ttf</fontPath>
+         <fontSize>0.023</fontSize>
+         <size>0.43 0.19</size>
+         <pos>0.51 0.720</pos>
+      </text>       
+   </view> 
+
+   <view name="basic">
+      <image name="basicOverlay" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size> 
+         <path>./_inc/assets/basic.png</path>
+      </image>  
+   </view>
+
+   <view name="detailed">
+      <image name="detailedOverlay" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size> 
+         <path>./_inc/assets/detailed.png</path>
+      </image>
+
+      <image name="md_image">
+         <pos>0.72 0.335</pos>
+         <maxSize>0.42 0.42</maxSize>
+         <origin>0.5 0.5</origin>
+      </image>  
+   </view>
+
+   <view name="video">
+      <image name="videodOverlay" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size> 
+         <path>./_inc/assets/detailed.png</path>
+      </image>
+
+      <video name="md_video">
+         <origin>0.5 0.5</origin>
+         <pos>0.72 0.335</pos>
+         <maxSize>0.42 0.42</maxSize>
+        <!-- <default>./_inc/videos/static.mp4</default>-->
+         <delay>0.1</delay>
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+      </video> 
+   </view>
+   
+   <view name="grid">
+	   <image name="gridOverlay" extra="true">
+         <path>./_inc/assets/grid.png</path>
+         <size>1 1</size>
+         <pos>0 0</pos>
+         <origin>0 0</origin>
+      </image>
+
+      <image name="logo">
+		   <pos>0.14 0.925</pos>
+		   <maxSize>0.10 0.10</maxSize>
+      </image>
+	      	
+      <imagegrid name="gamegrid">
+			<pos>0.1 0.13</pos>
+			<size>0.9 0.65</size>
+			<margin>-0 0</margin>
+		</imagegrid>
+
+		<gridtile name="default">
+			<size>0.20 0.33</size>
+			<backgroundImage>./_inc/images/default_grid.png</backgroundImage>
+			<backgroundColor>42424200</backgroundColor>
+		</gridtile>
+
+		<gridtile name="selected">
+			<size>0.25 0.40</size>
+			<backgroundImage>./_inc/images/default_grid.png</backgroundImage>
+			<backgroundColor>42424200</backgroundColor>
+		</gridtile>		
+
+      <text name="md_name">
+         <pos>0.1 0.82</pos>
+         <fontSize>0.04</fontSize>
+		   <color>858585</color>
+		   <fontPath>./_inc/fonts/Oxygen-Regular.ttf</fontPath>
+		   <alignment>center</alignment>
+		</text>
+    </view>
+</theme>
